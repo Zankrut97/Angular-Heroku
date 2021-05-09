@@ -1,0 +1,42 @@
+.content {
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 312px;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-bar {
+  margin-left: 10px;
+}
+
+.background-color {
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+  color: #fff;
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+.list-group-item {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.loading {
+  animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

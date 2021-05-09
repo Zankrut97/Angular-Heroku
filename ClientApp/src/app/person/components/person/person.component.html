@@ -1,0 +1,42 @@
+<div class="content">
+    <div class="search-container">
+        <div class="btn-group">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{searchType}}
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" (click)="searchByType('Name')">Search By Name</a>
+              <a class="dropdown-item" (click)="searchByType('Id')">Search By ID</a>
+            </div>
+        </div>
+        <app-search-bar class="search-bar"></app-search-bar> 
+        
+        <button class="btn btn-success my-2 my-sm-0" (click)="search()">Search</button>
+    </div>
+
+    <div *ngIf="loading" style="position: absolute; top:50%; left: 50%;">
+      <img class="loading" src="/assets/light-saber.svg" width="80" height="80"/>
+      <p style="margin-top:15px;text-align: center; font-family: 'Pacifica',cursive; font-size: large; font-weight: 300;">Fetching...</p>
+    </div>
+
+    <div *ngIf="!loading">
+      <div *ngIf="error">
+        <div style="position: absolute; top:40%; left: 40%;" *ngIf="error">
+          <img src="/assets/404.png" width="280"/>
+          <p style="text-align: center; font-family: 'Pacifica',cursive; font-size: x-large; font-weight: 300;">Enter Valid Id</p>
+        </div>
+      </div>
+
+      <div *ngIf="!error">
+        <div *ngIf="personData">
+          <app-datagrid [personData]="personData"></app-datagrid>
+        </div>
+
+        <div style="position: absolute; top:40%; left: 40%;" *ngIf="!personData">
+          <img src="/assets/search-img.svg" width="280"/>
+          <p style="text-align: center; font-family: 'Pacifica',cursive; font-size: large; font-weight: 300;">Search StarWars Characters</p>
+        </div>
+      </div>
+    </div>
+</div>
+
