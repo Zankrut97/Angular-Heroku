@@ -71,7 +71,7 @@ PersonService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInj
 __webpack_require__.r(__webpack_exports__);
 class Url {
 }
-Url.PERSON_API_ENDPOINT = "/redspace/api/people/";
+Url.PERSON_API_ENDPOINT = "https://node-starwars-backend.herokuapp.com/redspace/api/people/";
 /* harmony default export */ __webpack_exports__["default"] = (Url);
 
 

@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\thakk\OneDrive\Desktop\Demo-Hosting-Angular\Angular-Assessment-Redspace\src\polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! D:\Angular-Heroku\Angular-Heroku\src\polyfills.ts */"hN/g");
 
 
 /***/ }),

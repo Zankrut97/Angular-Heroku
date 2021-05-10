@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\thakk\OneDrive\Desktop\Demo-Hosting-Angular\Angular-Assessment-Redspace\src\main.ts */"zUnb");
+module.exports = __webpack_require__(/*! D:\Angular-Heroku\Angular-Heroku\src\main.ts */"zUnb");
 
 
 /***/ }),
